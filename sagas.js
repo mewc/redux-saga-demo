@@ -5,7 +5,7 @@ import { put, takeEvery, all} from 'redux-saga/effects'
     console.log('Hello Sagas!')
 }
 
- function* incrementAsync(){
+export function* incrementAsync(){
     yield delay(1000)
     yield put({type: 'INCREMENT'})
 }
